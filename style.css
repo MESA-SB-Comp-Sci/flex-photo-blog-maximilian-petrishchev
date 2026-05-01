@@ -45,6 +45,7 @@
   display: flex;
   padding: 20px 24px;
   gap: 4px;
+  flex-direction: column;
 /*  */
 /*  */
 }
@@ -73,10 +74,10 @@
 .nav {
   background-color: #0F6E56;
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   padding: 10px 24px;
   gap: 20px;
-
+  justify-content: space-around;
   /* add here */
 }
 
@@ -102,7 +103,7 @@
   display: flex;
   gap: 10px;
   color: white;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; 
 }
 
@@ -131,8 +132,8 @@
 ---------------------------------------------------------------- */
 
 .main {
-  /* add here */
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   padding: 20px;
   background-color: #f1efe8;
@@ -150,13 +151,16 @@
 .sidebar {
   background-color: white;
   border-radius: 6px;
+  display:flex;
   padding: 16px;
   width: 180px;
   flex-shrink: 0;
   border: 0.5px solid #D3D1C7;
   display: flex;
-  flex-direction: row;  
+  flex-direction: column;  
   gap: 10px;
+  align-items: stretch;
+
 }
 
 .sidebar-heading {
@@ -165,6 +169,8 @@
   font-weight: 500;
   border-bottom: 0.5px solid #D3D1C7;
   padding-bottom: 8px;
+  display:flex;
+  align-items: column;
 }
 
 .sidebar-detail {
@@ -205,7 +211,7 @@
 .images {
   display: flex;
   flex: 1;
-  flex-direction: row; 
+  flex-direction: column; 
   gap: 12px;
 }
 
@@ -222,11 +228,12 @@
 .photo {
   background-color: #D3D1C7;
   border-radius: 6px;
-  padding: 40px 20px;
+  display:flex;
+  padding: 100px 20px;
   font-size: 13px;
   color: #5F5E5A;
-  text-align: center;
-  flex: 0;  
+  text-align: column;
+  flex: 1;  
 }
 
 
@@ -243,7 +250,7 @@
   background-color: #1a1a2e;
   padding: 12px 24px;
   display: flex;
-  justify-content: center;   
+  justify-content: flex-start;   
   gap: 20px;
 }
 
