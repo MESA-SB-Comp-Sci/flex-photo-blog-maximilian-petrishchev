@@ -137,6 +137,7 @@
   gap: 16px;
   padding: 20px;
   background-color: #f1efe8;
+  flex: 1;
 }
 
 
@@ -228,8 +229,8 @@
 .photo {
   background-color: #D3D1C7;
   border-radius: 6px;
-  display:flex;
-  padding: 100px 20px;
+  display: flex;
+  padding: 40px 20px;
   font-size: 13px;
   color: #5F5E5A;
   text-align: column;
